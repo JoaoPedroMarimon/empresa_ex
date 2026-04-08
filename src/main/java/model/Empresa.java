@@ -1,3 +1,5 @@
+package model;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -17,7 +19,6 @@ public class Empresa {
     private String cep;
     private String fone;
 
-    // Construtor padrão (valores vazios)
     public Empresa() {
         this.nome = "";
         this.endereco = "";
@@ -27,7 +28,6 @@ public class Empresa {
         this.fone = "";
     }
 
-    // Construtor com parâmetros
     public Empresa(String nome, String endereco, String cidade, String estado, String cep, String fone) {
         this.nome = nome;
         this.endereco = endereco;
@@ -37,7 +37,6 @@ public class Empresa {
         this.fone = fone;
     }
 
-    // SETTERS
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -62,7 +61,6 @@ public class Empresa {
         this.fone = fone;
     }
 
-    // GETTERS
     public String getNome() {
         return nome;
     }
@@ -87,7 +85,6 @@ public class Empresa {
         return fone;
     }
 
-    // Método para solicitar dados do usuário
     public void lerDados() {
         Scanner sc = new Scanner(System.in);
 
@@ -110,7 +107,6 @@ public class Empresa {
         this.fone = sc.nextLine();
     }
 
-    // Método para imprimir dados
     public void imprimirDados() {
         System.out.println("\n--- Dados da Empresa ---");
         System.out.println("Nome: " + nome);
