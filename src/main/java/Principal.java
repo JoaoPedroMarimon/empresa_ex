@@ -1,5 +1,6 @@
 
 import model.Empresa;
+import model.Restaurante;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -16,16 +17,10 @@ public class Principal {
         Empresa emp1 = new Empresa();
         emp1.lerDados();
         emp1.imprimirDados();
+        Restaurante rest = new Restaurante();
+        
+        rest.lerDados();
+        rest.imprimirDados();
 
-        Empresa emp2 = new Empresa(
-                "Tech Solutions",
-                "Rua A, 123",
-                "São Paulo",
-                "SP",
-                "01000-000",
-                "(11) 99999-9999"
-        );
-
-        emp2.imprimirDados();
     }
 }
